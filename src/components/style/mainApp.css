@@ -1,0 +1,265 @@
+.mainapp-wrapper {
+  width: 100%;
+  height: 100vh;
+  /* height: 100dvh; */
+  font-size: 1em;
+  position: relative;
+}
+.mainapp-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.mainapp-header {
+  width: 100%;
+  height: 55px;
+  z-index: 1;
+  box-shadow: 0 0 5px black;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  position: relative;
+}
+.mainapp-logodiv {
+  height: 100%;
+  width: max-content;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainapp-logo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: royalblue;
+  white-space: nowrap;
+}
+.mainapp-options-button {
+  flex: 1;
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.mainapp-mobile-button {
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  right: 0;
+  margin: 0 15px;
+  display: none;
+  cursor: pointer;
+}
+.mainapp-mobile-button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: translateY(350%);
+}
+.mainapp-mobile-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: translateY(-350%);
+}
+.mainapp-lap-nav {
+  width: 400px;
+  height: 100%;
+  margin: 0 30%;
+  /* background-color: yellow; */
+}
+.mainapp-nav-ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 2px;
+}
+.mainapp-navli {
+  flex: 1;
+  /* background-color: red; */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+}
+.lap-nav {
+  cursor: pointer;
+}
+.mainapp-mobile-dropdown {
+  width: 150px;
+  height: 0;
+  transition: 0.5s;
+  position: absolute;
+  right: 0;
+  top: 55px;
+  font-size: 0em;
+  /* display: none; */
+}
+.mainapp-mobileDrop-body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.mainapp-mobileDrop-ul {
+  flex-direction: column;
+}
+.mobilenav-p {
+  flex: 1;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+.mobile-nav-svg {
+  width: 2em;
+  height: 2em;
+}
+.mobile-nav-on {
+  color: royalblue;
+  fill: royalblue;
+  border-bottom: 5px solid royalblue;
+}
+.mainapp-main {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #eff5f5;
+  position: relative;
+  overflow-y: scroll;
+}
+.mainapp-lap-addOptns{
+     position: sticky;
+     width: 300px;
+     height: 100%;
+     top: 0;
+     /* background-color: red; */
+}
+.mainapp-pagelayout{
+     position: absolute;
+     inset: 0;
+     margin: auto;
+     width: 700px;
+     min-height: 100%;
+     max-height: max-content;
+}
+.mainapp-lap-addOptnsWrapper{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.mainapp-lap-addOptns-ul{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 0;
+}
+.mainapp-lap-addOptns-li{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  /* background-color: yellow; */
+}
+.mainapp-lap-addOptns-li:hover{
+  background-color: rgb(212, 211, 211);
+}
+.mainapp-addOptns-li-div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 10px;
+}
+.mainapp-addoptn-imgDiv{
+  height: 100%;
+  width: 50px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.mainapp-addoptn-img{
+  width: 100%;
+  height: 100%;
+}
+.mainapp-addOptn-name-h2{
+  font-family: sans-serif;
+  color: rgb(91, 91, 91);
+}
+.mainapp-lap-addOptns-logoutBtn{
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-weight: bolder;
+  padding: 0 40px;
+  font-size: 1.1em;
+  color: red;
+  background:none;
+  border: none;
+  outline-color: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: sans-serif;
+}
+.addOptns-lap-cmpy-info{
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  font-family: sans-serif;
+}
+/* loader */
+.ls-loaderUi{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 10;
+}
+.ls-loaderUi::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 7px solid red;
+  border-right-color:transparent ;
+  border-radius: 100px;
+  animation: sLLoader infinite 1s;
+}
+.ls-displayLoader{
+  display: none;
+}
+@media (max-device-width: 950px), (width<950px) {
+  .mainapp-lap-nav {
+    display: none;
+  }
+  .mainapp-mobile-button {
+    display: block;
+  }
+  .open-mobile-nav-div {
+    display: block;
+    height: 200px;
+    font-size: 1em;
+  }
+  .mainapp-lap-addOptns{
+     display: none;
+  }
+  .mainapp-pagelayout{
+     width: 100%;
+  }
+}

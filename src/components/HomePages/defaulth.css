@@ -1,0 +1,85 @@
+.def-h-wrapper{
+     width: 100%;
+     height: max-content;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     padding: 30px 0;
+}
+.def-h-headingDiv{
+     position: sticky;
+     top: 0;
+     background-color: aliceblue;
+     padding: 10px 0;
+}
+.h-Card-wrapper{
+     margin: 0 2%;
+     width: 95%;
+     height: 90px;
+     border-radius: 10px;
+     display: flex;
+     justify-content: space-between;
+     padding: 10px 0;
+     background-color: white;
+     box-sizing: content-box;
+     box-shadow: 0 0 5px black;
+}
+.h-card-userDiv{
+     height: 100%;
+     width: max-content;
+     margin: 0 10px;
+     display: flex;
+     gap: 20px;
+     align-items: center;
+}
+.h-card-imgDiv{
+     height: 100%;
+     width: 90px;
+}
+.h-card-img{
+     width: 100%;
+     height: 100%;
+     border-radius: 100px;
+}
+.h-card-viewbtn-Div{
+     align-self: center;
+     margin: 0 20px;
+     width: 100px;
+     height: 35px;
+     border-radius: 5px;
+     overflow: hidden;
+}
+.h-card-v-btn{
+     width: 100%;
+     height: 100%;
+     border: none;
+     outline-color: transparent;
+     background-color: royalblue;
+     font-size: 15px;
+     font-weight: bolder;
+     color: white;
+     cursor: pointer;
+}
+.h-card-v-btn:active{
+     transform: scale(0.9);
+}
+.h-card-name{
+     text-transform: uppercase;
+     font-size: 20px;
+}
+@media (max-device-width: 950px), (width<950px) {
+     .h-card-name{
+          font-size: 15px;
+          white-space: normal;
+     }
+     .h-card-userDiv{
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 10px;
+     }
+     .h-card-imgDiv{
+          height: 70%;
+          width: 65px;
+     }
+}

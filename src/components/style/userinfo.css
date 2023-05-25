@@ -1,0 +1,114 @@
+.userInfo-wrapper {
+  width: 100%;
+  height: max-content;
+  font-size: 1em;
+  /* background-color: aqua; */
+}
+.userInfo-container {
+  width: 100%;
+  height: max-content;
+}
+.userInfo-profile-div {
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(white, gray);
+  border-radius: 0 0 10px 10px;
+  position: relative;
+}
+.userInfo-coverImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 10px 10px;
+}
+.userInfo-profileHolder {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  bottom: 0;
+  position: absolute;
+  transform: translateY(50%) translateX(20%);
+}
+.userInfo-profileImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  border: 6px solid #eff5f5;
+}
+.userInfo-main {
+  width: 100%;
+  min-height: 300px;
+  max-height: max-content;
+  /* background-color: aqua; */
+}
+.userInfo-name-infoDiv {
+  width: 100%;
+  height: 100px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  transition: 0.5s;
+  position: relative;
+}
+.userInfoName {
+  font-family: sans-serif;
+}
+.userInfo-infoDiv {
+  width: 100%;
+  height: max-content;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px black;
+  margin: 20px 0;
+}
+.userInfo-info-p {
+  margin: 10px 0;
+  font-size: 1.4em;
+  font-family: sans-serif;
+  color: gray;
+  text-align: justify;
+}
+.userInfo-about {
+  font-family: sans-serif;
+}
+.userInfo-editButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0 20px;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: white;
+  fill: wheat;
+  font-size: larger;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+@media (max-device-width: 950px), (width<950px) {
+  .userInfo-profile-div {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+  }
+  .userInfo-profileHolder {
+    transform: translateY(50%);
+  }
+  .userInfo-name-infoDiv {
+    height: 220px;
+    align-items: flex-end;
+    padding-bottom: 70px;
+  }
+  .userInfo-editButton {
+    margin: 20px 20px;
+  }
+}

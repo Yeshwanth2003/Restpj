@@ -1,0 +1,79 @@
+.s-d-wrapper {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.s-d-heading {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.s-d-b-btnDiv {
+  width: 100px;
+  height: 40px;
+}
+.s-d-b-btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 18px;
+  gap: 5px;
+  border: none;
+  outline-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+.s-d-body {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 0;
+}
+.s-d-inputDiv {
+  width: 80%;
+  height: 60px;
+}
+.s-d-input {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 10px;
+  outline-color: red;
+}
+.s-d-input:focus {
+  box-shadow: 0 0 10px red;
+}
+.s-d-del-btnDiv {
+  margin: 20px 50px;
+  width: 140px;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  align-self: flex-end;
+}
+.s-d-del-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 100%;
+  font-size: 17px;
+  font-weight: bolder;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s-d-del-btn:active{
+     transform: scale(0.9);
+}
